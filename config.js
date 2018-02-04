@@ -1,36 +1,36 @@
-﻿var apiKey = "PUT_YOUR_API_KEY_HERE"; // darksky.net api key
-var latitude = "45.536031"; // Showing Montreal.  search your city on google map and look at the url to get your latitude and longitude
-var longitude = "-73.5906905";
+﻿var apiKey = "ed5d9a8f03e0df4c6ec1105c93234afa"; // darksky.net api key
+var latitude = "39.322308"; // Showing Soda Springs
+var longitude = "-120.442098";
 var lang = "en"; // too many options.  check here https://darksky.net/dev/docs/forecast
-var units = "si"; // auto, ca, uk2, us, si
-var degreeSymbol = "C"; // C or F
-var rainPrecUnit = "mm";
-var snowPrecUnit = "cm";
-var windUnit = "km/h"
-var forecastNbOfDays = 6; // 0 to 8
-var hourlyNbOfHours = 20; // 0-49
-var theme = "blue"; // "blue", "black", "white"
+var units = "us"; // auto, ca, uk2, us, si
+var degreeSymbol = "F"; // C or F
+var rainPrecUnit = "in";
+var snowPrecUnit = "in";
+var windUnit = "mph"
+var forecastNbOfDays = 5; // 0 to 8
+var hourlyNbOfHours = 18; // 0-49
+var theme = "black"; // "blue", "black", "white"
 
-var showScrollingAlerts = true;
+var showScrollingAlerts = false;
 var showCurrentWeather = true;
 var showCurrentIcon = true;
-var showCurrentSummary = true;
-var showCurrentWindBearing = true;
+var showCurrentSummary = false;
+var showCurrentWindBearing = false;
 var showCurrentDate = true;
 var showCurrentTime = true;
 var showForecastIcon = true;
-var showForecastSummary = true;
+var showForecastSummary = false;
 var showForecastMinTemp = true;
-var showForecastWind = true;
-var showForecastWindBearing = true;
+var showForecastWind = false;
+var showForecastWindBearing = false;
 var showForecastAccumulation = true;
 var showForecastProbability = true;
 var showHourlyIcon = true;
-var showHourlyWind = true;
-var showHourlyWindBearing = true;
+var showHourlyWind = false;
+var showHourlyWindBearing = false;
 var showHourlyAccumulation = true;
 var showHourlyProbability = true;
-var showDarkSkyLink = true; // set to true if you have a free darksky api key.  
+var showDarkSkyLink = false; // set to true if you have a free darksky api key.
 
 var debugging = false; // will allow showing forecast for past days.  Usefull when playing with sample data
 
@@ -38,7 +38,7 @@ var debugging = false; // will allow showing forecast for past days.  Usefull wh
 // English
 var todayLabel = "Today";
 var windLabel = "wind";
-var apparentTempLabel = "feeling";
+var apparentTempLabel = "feels";
 var week = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 var month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 

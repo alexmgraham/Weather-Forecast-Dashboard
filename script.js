@@ -73,7 +73,7 @@ function showCurrent(current, summary) {
 function showDateTime() {
 	var now = new Date();
 	$("#currentDate").text(week[now.getDay()] + ', ' + now.getDate() + ' ' + month[now.getMonth()]);
-	$("#currentTime").text(now.getHours() + (now.getMinutes() < 10 ? ":0" : ":") + now.getMinutes());
+	$("#currentTime").text(now.toLocaleString("en-US", { hour: "numeric", minute: "numeric", hour12: true }));
 }
 
 function showForecast(days) {
